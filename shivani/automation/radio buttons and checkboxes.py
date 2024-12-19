@@ -1,0 +1,41 @@
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+import time
+
+driver = webdriver.Chrome()
+driver.maximize_window()
+driver.get("https://www.letskodeit.com/practice")
+time.sleep(5)
+bmwRadioBtn = driver.find_element(By.ID,"bmwradio")
+bmwRadioBtn.click()
+time.sleep(5)
+benzRadioBtn = driver.find_element(By.ID,"benzradio")
+benzRadioBtn.click()
+time.sleep(5)
+hondaRadioBtn = driver.find_element(By.ID,"hondaradio")
+hondaRadioBtn.click()
+time.sleep(5)
+radio_buttons =driver.find_elements(By.XPATH,"//div[@class='col-md-12']//a")
+print(len(radio_buttons))
+time.sleep(5)
+bmwcheckBox = driver.find_element(By.ID,"bmwcheck")
+bmwcheckBox.click()
+time.sleep(5)
+benzcheckBox = driver.find_element(By.ID,"benzcheck")
+benzcheckBox.click()
+time.sleep(5)
+hondacheckBox = driver.find_element(By.ID,"hondacheck")
+hondacheckBox.click()
+check_boxes =driver.find_elements(By.XPATH,"//div[@class='col-md-12']//a")
+print(len(check_boxes))
+time.sleep(5)
+time.sleep(5)
+print("BMW Radio Button is selected?" + str(bmwRadioBtn.is_selected()))
+print("Benz Radio Button is selected?" + str(benzRadioBtn.is_selected()))
+print("Honda Radio Button is selected?" + str(hondaRadioBtn.is_selected()))
+print("BMW Check Box is selected?" + str(bmwcheckBox.is_selected()))
+print("Benz Check Box is selected?" + str(benzcheckBox.is_selected()))
+print("Honda Check Box is selected?" + str(hondacheckBox.is_selected()))
+
+
+

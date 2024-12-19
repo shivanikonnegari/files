@@ -1,0 +1,13 @@
+assignment 
+
+IDENTIFY MAIN FUNCTIONALITIES OR IMPORTANT FUNCTIONALITIES OF ZOMATO
+   1.Restaurant Discovery
+   2.restaurant reviews
+   3.Food Delivery
+   4.Payment 
+   5.Food and Restaurant Deals
+
+
+
+
+
